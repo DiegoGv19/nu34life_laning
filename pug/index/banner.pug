@@ -1,0 +1,29 @@
+include ./../mixins/header.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="./../style.css")
+        link(rel="stylesheet",href="https://fonts.googleapis.com/css?family=Roboto:400,700")
+        title Document
+    body
+
+        +Mheader
+
+        main
+            .banner
+                
+                .info
+                    p.banner-paragraph|Deje que los alimentos sean su medicina y que la medicina sea su alimento.
+                    p.banner-paragraph|En Nu34life creemos que los pacientes desean tener una mayor facilidad para contactar a su nutricionista y/o llevar un mayor seguimiento de su dieta. 
+                img.imagen(src="./../asserts/celular.jpg", alt="")
+                .container-link.dif
+                    a.banner-link(href="https://play.google.com/store/apps?hl=es_419" target="_blank")
+
+                    img.linkimg(src="./../asserts/googleplay.png", alt="")
+                .container-link
+                    a.banner-link(href="https://play.google.com/store/apps?hl=es_419" target="_blank")
+                    img.linkimg(src="./../asserts/appstore.png", alt="")

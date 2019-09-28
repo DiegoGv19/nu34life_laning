@@ -1,0 +1,21 @@
+mixin Mheader
+    header.header
+        .logo
+            img(src="./../asserts/logo_heder.jpg", alt="logo del BCP")
+        block 
+
+
+
+mixin Mheader-list(link1,href1,link2,href2)
+    nav    
+        ul.menu
+            li.menu-item
+                a.menu-link(href=href1)=link1
+            li.menu-item
+                a.menu-link(href=href2)=link2
+
+
+
+
+
+

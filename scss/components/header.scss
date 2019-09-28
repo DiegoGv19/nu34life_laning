@@ -1,0 +1,28 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    height: $Height-Header;
+    max-width: $Max-width;
+    background: var(--Secondary-color);
+    margin-right: auto;
+    margin-left: auto;
+    &::before {
+    content: " ";
+    
+    height: $Height-Header;
+    width: 100vw;
+    background: var(--Secondary-color);
+    position: absolute;
+    left: 0;
+    z-index: $Z-index-back;
+    }
+}
+
+.logo img{
+    height: 2em;
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+        
